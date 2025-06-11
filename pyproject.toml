@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "strcompat"
+version = "0.1.0-alpha"
+description = "A Python library handling conversions `unicode` <-> UTF-8 `str`s (Python 2), `unicode` <-> URI `str`s (Python 2 and 3), and `unicode` <-> `str`s in the filesystem encoding (Python 2)."
+readme = "README.md"
+requires-python = ">=2"
+license = "MIT"
+authors = [
+  { name="Jifeng Wu", email="jifengwu2k@gmail.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "posix-or-nt; python_version < '3'",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jifengwu2k/strcompat"
+"Bug Tracker" = "https://github.com/jifengwu2k/strcompat/issues"
