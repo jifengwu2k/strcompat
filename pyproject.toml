@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "textcompat"
+version = "0.1.0a0"
+description = "Python library handling conversions from `typing.Text` (Python 2 `unicode`, Python 3 `str`) to UTF-8, URI, stdin/stdout, and filesystem `str`s, and vice versa."
+readme = "README.md"
+requires-python = ">=2"
+license = "MIT"
+authors = [
+  { name="Jifeng Wu", email="jifengwu2k@gmail.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "posix-or-nt",
+    "typing; python_version < '3.5'"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jifengwu2k/textcompat"
+"Bug Tracker" = "https://github.com/jifengwu2k/textcompat/issues"

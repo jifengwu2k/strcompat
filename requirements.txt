@@ -1,0 +1,2 @@
+posix-or-nt
+typing; python_version < '3.5'
